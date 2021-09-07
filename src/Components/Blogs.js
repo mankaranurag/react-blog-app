@@ -30,7 +30,7 @@ const Blogs = () => {
       <h1 className='blog__page__header'>Blogs</h1>
 
       {loading ? <h1 className='loading'>Loading...</h1> : ''}
-      <h4>Total Number of results: {blogs?.totalArticles}</h4>
+      <h4>Total Number of results: {blogs?.totalArticles === 0}</h4>
       <div className='blogs'>
         {blogs?.articles?.map(blog => (
           <a
